@@ -4,9 +4,7 @@
 
 <head>
   <title>Chuse</title>
-  <style>
-    <?php include "css/index.css" ?>
-  </style>
+  <?php echo link_tag("css/index.css"); ?>
 </head>
 
 <body>

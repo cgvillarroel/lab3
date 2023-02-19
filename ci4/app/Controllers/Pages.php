@@ -8,11 +8,15 @@ class Pages extends BaseController
 {
   public function index()
   {
-    return view('templates/home_billboard');
+    return view('templates/landing');
   }
 
   public function view($page = 'home')
   {
+    if ($page == 'home') {
+      return view('templates/landing');
+    }
+
     if (!is_file(APPPATH . 'Views/pages/' . $page . '.php')) {
       // Whoops, we don't have a page for that!
       throw new PageNotFoundException($page);

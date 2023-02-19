@@ -4,10 +4,7 @@
 
 <head>
   <title>CodeIgniter Tutorial</title>
-  <?php
-  helper("html");
-  echo link_tag("css/style.css");
-  ?>
+  <?php echo link_tag("css/style.css"); ?>
 </head>
 
 <body>

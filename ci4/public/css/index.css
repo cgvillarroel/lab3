@@ -1,4 +1,4 @@
-@import "css/style.css";
+@import url("style.css");
 
 body {
   color: #d8dee9;
@@ -11,7 +11,7 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
-  background-image: url("images/wallpaper.png");
+  background-image: url("../images/wallpaper.png");
   background-size: cover;
 }
 
