@@ -1,3 +1,4 @@
+<p>Want to submit an article? <?= anchor("news/create", "You can do so here!") ?></p>
 <?php if (! empty($news) && is_array($news)): ?>
 
     <?php foreach ($news as $news_item): ?>
