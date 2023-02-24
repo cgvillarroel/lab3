@@ -2,17 +2,17 @@
 <?= validation_list_errors() ?>
 
 <form action="<?= base_url() . "/news/create" ?>" method="post">
-    <?= csrf_field() ?>
+  <?= csrf_field() ?>
 
-    <label for="title">Title</label>
-    <br />
-    <input type="input" name="title" value="<?= set_value('title') ?>">
-    <br />
+  <label for="title">Title</label>
+  <br />
+  <input type="input" name="title" value="<?= set_value('title') ?>">
+  <br />
 
-    <label for="body">Text</label>
-    <br />
-    <textarea name="body" cols="45" rows="4"><?= set_value('body') ?></textarea>
-    <br />
+  <label for="body">Text</label>
+  <br />
+  <textarea name="body" cols="45" rows="4"><?= set_value('body') ?></textarea>
+  <br />
 
-    <input type="submit" name="submit" value="Create news item">
+  <input type="submit" name="submit" value="Create news item">
 </form>
