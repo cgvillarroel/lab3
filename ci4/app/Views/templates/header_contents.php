@@ -4,7 +4,7 @@
   <p>
   <ul>
     <?php
-    $pages = ["works", "guests", "about", "resources"];
+    $pages = ["works", "guests", "news", "others"];
     foreach ($pages as $page) {
       echo "<li>";
       // manual instead of url helper because index.php in the url is ugly

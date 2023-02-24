@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-  <title>CodeIgniter Tutorial</title>
+  <title>Chuse - <?= esc($title) ?></title>
   <?php echo link_tag("css/style.css"); ?>
 </head>
 
