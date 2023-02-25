@@ -61,10 +61,10 @@ class Guests extends BaseController
     // Checks whether the submitted data passed the validation rules.
     if (!$this->validateData($post, [
       'name' => 'required|max_length[70]|min_length[3]',
-      'email' => 'required|max_length[50]|min_length[6]',
-      'website' => 'required|max_length[100]|min_length[4]',
-      'comment'  => 'required|max_length[5000]|min_length[10]',
-      'gender' => 'required|max_length[6]|min_length[4]',
+      'email' => 'required|valid_email|max_length[50]|min_length[6]',
+      'website' => 'valid_url_strict|max_length[100]|min_length[4]',
+      'comment'  => 'max_length[5000]|min_length[10]',
+      'gender' => 'max_length[6]|min_length[4]',
     ])) {
       // The validation fails, so returns the form.
       return view('templates/header', ['title' => 'Add a guest'])
