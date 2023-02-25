@@ -6,13 +6,13 @@
       "class" => "carousel_img"
     ]) ?>
   </a>
-  <a href="https://github.com/chusecubr/dotfiles" target="_blank">
+  <a href="https://github.com/cgvillarroel/lab3" target="_blank">
     <?php echo img([
       "src" => "images/carousel1.png",
       "class" => "carousel_img"
     ]) ?>
   </a>
-  <a href="https://github.com/cgvillarroel/lab3" target="_blank">
+  <a href="https://github.com/chusecubr/dotfiles" target="_blank">
     <?php echo img([
       "src" => "images/carousel2.png",
       "class" => "carousel_img"
@@ -27,17 +27,17 @@
   <a onclick="move_slide(1)">&gt</a>
 </div>
 <div id="carousel_caption">
-  <a class="carousel_title" href="https://github.com/chusecubr/rm-docket" target="_blank">
-    <h3>Docket</h3>
-  </a>
+  <h3 class="carousel_title">
+    <a href="https://github.com/chusecubr/rm-docket" target="_blank">Docket</a>
+  </h3>
   <p class="carousel_desc">An interactive desktop schedule display</p>
-  <a class="carousel_title" href="https://github.com/cgvillarroel/lab3" target="_blank">
-    <h3>This website</h3>
-  </a>
+  <h3 class="carousel_title">
+    <a href="https://github.com/cgvillarroel/lab3" target="_blank">This website</a>
+  </h3>
   <p class="carousel_desc">My first project with JS, PHP, and a framework</p>
-  <a class="carousel_title" href="https://github.com/chusecubr/dotfiles" target="_blank">
-    <h3>dotfiles</h3>
-  </a>
+  <h3 class="carousel_title">
+    <a href="https://github.com/chusecubr/dotfiles" target="_blank">dotfiles</a>
+  </h3>
   <p class="carousel_desc">My WIP linux rice (configuration/setup)</p>
 </div>
 <hr />

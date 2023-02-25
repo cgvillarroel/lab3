@@ -6,8 +6,9 @@ const descs = document.getElementsByClassName("carousel_desc");
 const nav_buttons = document.getElementsByClassName("carousel_btn");
 
 function show_slide(slide_idx) {
+  current_slide = slide_idx
   for (i = 0; i < slides.length; i++) {
-    if (i == slide_idx) {
+    if (i == current_slide) {
       slides[i].style.display = "block";
       titles[i].style.display = "block";
       descs[i].style.display = "block";
