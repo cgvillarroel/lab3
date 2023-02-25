@@ -1,9 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&family=Poppins&display=swap');
 
+:root {
+  --white: #eceff4;
+  --black: #4c566a;
+  --blue: #81a1c1;
+  --red: #bf616a;
+  --dark-white: #d8dee9;
+  --dark-black: #434c5e;
+  --dark-blue: #5e81ac;
+}
+
 body {
   margin: 2em;
-  background-color: #eceff4;
-  color: #434c5e;
+  background-color: var(--white);
+  color: var(--dark-black);
   font-size: 18pt;
   font-family: "IBM Plex Sans", sans-serif;
 }
@@ -14,7 +24,7 @@ body {
 }
 
 .hidden {
-  color: #d8dee9;
+  color: var(--dark-white);
 }
 
 #header {
@@ -22,14 +32,14 @@ body {
 }
 
 #header h1 {
-  color: #5e81ac;
+  color: var(--dark-blue);
   font-size: 60pt;
   font-weight: Normal;
   margin-bottom: -0.5em;
 }
 
 #header p {
-  color: #4c566a;
+  color: var(--black);
 }
 
 #header ul {
@@ -56,7 +66,7 @@ body {
 }
 
 #carousel_nav {
-  color: #434c5e;
+  color: var(--dark-black);
   text-align: center;
   margin-bottom: -0.5em;
 }
@@ -82,11 +92,11 @@ body {
 }
 
 hr {
-  color: #81a1c1;
+  color: var(--blue);
 }
 
 h1 {
-  color: #5e81ac;
+  color: var(--dark-blue);
 }
 
 img {
@@ -94,15 +104,59 @@ img {
 }
 
 a {
-  color: #5e81ac;
+  color: var(--dark-blue);
   text-decoration: none;
   margin-right: 1em;
 }
 
 a:hover {
-  color: #81a1c1;
+  color: var(--blue);
+}
+
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  color: var(--black);
+  font-size: 16pt;
+  font-family: "IBM Plex Sans", sans-serif;
+  padding: 0.5em;
+  background-color: var(--white);
+  border: 2pt solid var(--dark-white);
+  border-bottom: 2pt solid var(--blue);
+  resize: none;
+}
+
+input[type=text] {
+  color: var(--black);
+  font-size: 16pt;
+  font-family: "IBM Plex Sans", sans-serif;
+  padding: 0.5em;
+  background-color: var(--white);
+  border: 2pt solid var(--dark-white);
+  border-bottom: 2pt solid var(--blue);
+  width: 50%;
+}
+
+input[type=submit] {
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+  background-color: var(--dark-blue);
+  font-size: 14pt;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  border: none;
+  color: var(--white);
+  padding: 1em 3em;
+  text-decoration: none;
+  border-radius: 5pt;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: var(--blue);
 }
 
 .error {
-  color: #bf616a;
+  color: var(--red);
 }

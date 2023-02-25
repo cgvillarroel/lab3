@@ -4,15 +4,23 @@
 <form action="<?= base_url() . "/news/create" ?>" method="post">
   <?= csrf_field() ?>
 
-  <label for="title">Title</label>
+  <?= form_label("Title", "title") ?>
   <br />
-  <input type="input" name="title" value="<?= set_value('title') ?>">
+  <?= form_input("title", set_value("title"), [
+    "placeholder" => "Article title...",
+  ]) ?>
   <br />
-
-  <label for="body">Text</label>
-  <br />
-  <textarea name="body" cols="45" rows="4"><?= set_value('body') ?></textarea>
   <br />
 
-  <input type="submit" name="submit" value="Create news item">
+  <?= form_label("Body", "body") ?>
+  <br />
+  <?= form_textarea("body", set_value("body"), [
+    "cols" => "45",
+    "rows" => "4",
+    "placeholder" => "Article content...",
+  ]) ?>
+  <br />
+  <br />
+
+  <input type="submit" name="submit" value="CREATE NEWS ITEM">
 </form>
