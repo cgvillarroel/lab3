@@ -1,8 +1,8 @@
 <h2><?= esc($guests['name']) ?></h2>
 <h3>Email</h3>
-<p><?= esc($guests['email']) ?></p>
+<p><?= mailto(esc($guests['email'])) ?></p>
 <h3>Website</h3>
-<p><?= esc($guests['website']) ?></p>
+<p><?= anchor(esc($guests['website'])) ?></p>
 <h3>Comment</h3>
 <p><?= esc($guests['comment']) ?></p>
 <h3>Gender</h3>
