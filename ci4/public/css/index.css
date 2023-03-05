@@ -1,7 +1,7 @@
 @import url("style.css");
 
 body {
-  color: #d8dee9;
+  color: var(--dark-white);
 }
 
 .outer {
@@ -28,13 +28,13 @@ body {
 }
 
 #header p {
-  color: #d8dee9;
+  color: var(--dark-white);
 }
 
 a {
-  color: #d8dee9;
+  color: var(--dark-white);
 }
 
 a:hover {
-  color: #eceff4;
+  color: var(--white);
 }
